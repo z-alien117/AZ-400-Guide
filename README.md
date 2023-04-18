@@ -14,7 +14,7 @@
 - [Connect Azure Boards to GitHub (Cloud)](https://learn.microsoft.com/en-gb/azure/devops/boards/github/connect-to-github?view=azure-devops)
 - [10866 7 Migrating from TFVC to Git FINAL](https://www.youtube.com/watch?v=QsJdFkMKLN0)
 
-## Tutoriales
+## Tutorials
 - [Tutorial Docker (Youtube)](https://www.youtube.com/watch?v=CV_Uf3Dq-EU&list=PLtLiB-M75y9RJz21oSD_r2RjgWuFxFg0y)
 - [Tutorial Kubernetes (Youtube)](https://www.youtube.com/watch?v=DCoBcpOA7W4&list=PLtLiB-M75y9RJz21oSD_r2RjgWuFxFg0y)
 
