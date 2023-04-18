@@ -5,6 +5,8 @@
 - [Introduction to GitHub](https://learn.microsoft.com/en-us/training/modules/introduction-to-github/)
 - [Greenfield vs Brownfield](https://successive.cloud/greenfield-vs-brownfield-development-which-strategy-is-right-for-you/)
 
+## Quickstarts
+- [Connect azure boards to github](https://learn.microsoft.com/en-gb/azure/devops/boards/github/connect-to-github?view=azure-devops)
 
 <!-- https://learn.microsoft.com/en-gb/azure/devops/boards/github/connect-to-github?view=azure-devops
 
