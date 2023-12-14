@@ -8,9 +8,12 @@
 - [Git Large File Storage Git-lfs](https://git-lfs.com/)
 - [Traffic Manager routing methods](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods)
 - [Azure globe](https://datacenters.microsoft.com/globe/explore)
+- [Microsoft-hosted agents](https://learn.microsoft.com/en-gb/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml)
+- [Microsoft Azure Virtual Training Day:
+DevOps with GitHub](https://info.microsoft.com/AU-DevOps-CATALOG-FY21-02Feb-08-MicrosoftAzureVirtualTrainingDayDevOpswithGitHub-SRDEM60815_CatalogDisplayPage.html)
+
 
 ## Quickstarts
-
 - [Connect Azure Boards to GitHub (Cloud)](https://learn.microsoft.com/en-gb/azure/devops/boards/github/connect-to-github?view=azure-devops)
 - [10866 7 Migrating from TFVC to Git FINAL](https://www.youtube.com/watch?v=QsJdFkMKLN0)
 
@@ -18,6 +21,8 @@
 - [Tutorial Docker (Youtube)](https://www.youtube.com/watch?v=CV_Uf3Dq-EU&list=PLtLiB-M75y9RJz21oSD_r2RjgWuFxFg0y)
 - [Tutorial Kubernetes (Youtube)](https://www.youtube.com/watch?v=DCoBcpOA7W4&list=PLtLiB-M75y9RJz21oSD_r2RjgWuFxFg0y)
 
+## Learning path
+- [AZ-400](https://learn.microsoft.com/en-us/collections/okmqbrzn1emjn7)
 
 ## Repos
 - [AZ-400 GITHUB](https://github.com/MicrosoftLearning/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions)
@@ -32,6 +37,7 @@
 - [Azure Latency Test](https://www.azurespeed.com/Azure/Latency)
 - [Roadmap.sh](https://roadmap.sh/)
 - [SoloLearn](https://www.sololearn.com/)
+- [Crontab](https://crontab.cronhub.io/)
 
 
 ## Contact
