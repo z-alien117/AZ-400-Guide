@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "webAppName": {
+            "type": "string"
+        },
+        "sqlServerName": {
+            "type": "string"
+        },
+        "keyVaultName": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]"
+        }
+        },
+        "variables": {
+        "sqlServerAdminLogin": "SqlAdmin"
+        },
+        "resources": [
+        {
+            "type": "Microsoft.KeyVault/vaults",
+            "apiVersion": "2019-09-01",
+            "name": "[parameters('keyVaultName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+            "sku": {
+                "family": "A",
+                "name": "standard"
+            },
+            "tenantId": "[subscription().tenantId]",
+            "accessPolicies": [] // Access policies here
+            }
+        },
+        {
+            "type": "Microsoft.KeyVault/vaults/secrets",
+            "apiVersion": "2019-09-01",
+            "name": "[concat(parameters('keyVaultName'), '/sqlServerAdminPassword')]",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+            "[resourceId('Microsoft.KeyVault/vaults', parameters('keyVaultName'))]"
+            ],
+            "properties": {
+            "value": "<Your-Secret-Value-Here>"
+            }
+        }
+
+        ],
+        "outputs": {
+        }
+  }
+  

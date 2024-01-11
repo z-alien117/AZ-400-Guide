@@ -1,0 +1,71 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "webAppName": {
+            "type": "string"
+        },
+        "sqlServerName": {
+            "type": "string"
+        },
+        "sqlDbName": {
+            "type": "string",
+            "defaultValue": "SampleDB"
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]"
+        }
+        },
+        "resources": [
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "linkedTemplateWebApp",
+            "properties": {
+            "mode": "Incremental",
+            "templateLink": {
+                "uri": "[concat('https://mystorageaccount.blob.core.windows.net/armtemplates/webapp.json')]",
+                "contentVersion": "1.0.0.0"
+            },
+            "parameters": {
+                "webAppName": {
+                "value": "[parameters('webAppName')]"
+                },
+                "location": {
+                "value": "[parameters('location')]"
+                }
+            }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "linkedTemplateSqlServerAndDb",
+            "properties": {
+            "mode": "Incremental",
+            "templateLink": {
+                "uri": "[concat('https://mystorageaccount.blob.core.windows.net/armtemplates/sqlserver-db.json')]",
+                "contentVersion": "1.0.0.0"
+            },
+            "parameters": {
+                "sqlServerName": {
+                "value": "[parameters('sqlServerName')]"
+                },
+                "sqlDbName": {
+                "value": "[parameters('sqlDbName')]"
+                },
+                "location": {
+                "value": "[parameters('location')]"
+                }
+            }
+            }
+        }
+        ],
+        "outputs": {
+        "webAppUrl": {
+            "type": "string",
+            "value": "[concat('https://', parameters('webAppName'), '.azurewebsites.net')]"
+        }
+        }
+}
