@@ -12,6 +12,7 @@
 - [Microsoft Azure Virtual Training Day:
 DevOps with GitHub](https://info.microsoft.com/AU-DevOps-CATALOG-FY21-02Feb-08-MicrosoftAzureVirtualTrainingDayDevOpswithGitHub-SRDEM60815_CatalogDisplayPage.html)
 - [Github actions marketplace](https://github.com/marketplace?type=actions)
+- [git-config](https://git-scm.com/docs/git-config)
 
 
 ## Quickstarts
@@ -39,14 +40,15 @@ DevOps with GitHub](https://info.microsoft.com/AU-DevOps-CATALOG-FY21-02Feb-08-M
 - [Roadmap.sh](https://roadmap.sh/)
 - [SoloLearn](https://www.sololearn.com/)
 - [Crontab](https://crontab.cronhub.io/)
+- [Mermaid visual tools](https://mermaid.live/)
 
 ## Samples
 - [pipeline.yaml](samples/pipeline.yaml)
+- [sample.bicep](samples/sample.bicep)
 
 ## Visuals
 
 ![Labs az400 Architecture](media/AZ400_architecture.svg)
-
 
 
 
